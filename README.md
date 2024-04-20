@@ -27,3 +27,4 @@ The example code is in Python (version 2.7 or higher will work).
 <p>Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of the eye (as if you were looking at the person), and then working clockwise around the eye.</p>
 
 <p>It checks 20 consecutive frames and if the Eye Aspect ratio is less than 0.25, Alert is generated.</p>
+
