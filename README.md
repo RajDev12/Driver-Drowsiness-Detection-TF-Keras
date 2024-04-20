@@ -20,4 +20,5 @@ The example code is in Python (version 2.7 or higher will work).
   <li>import matplotlib</li>
 </ul>
 <br>
-href="#description-"
+<h2>Description</h2>
+<p>A computer vision system that can automatically detect driver drowsiness in a real-time video stream and then play an alarm if the driver appears to be drowsy.</p>
