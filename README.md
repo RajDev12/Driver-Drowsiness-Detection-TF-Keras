@@ -3,7 +3,7 @@ Data set used for Haar Cascade model training is attached to : https://www.kaggl
 
 This code can detect your eyes and alert when the user is drowsy.
 
-**Applications**
+***Applications*** <br>
 This can be used by riders who tend to drive for a longer period of time that may lead to accidents.
 
 Code Requirements
