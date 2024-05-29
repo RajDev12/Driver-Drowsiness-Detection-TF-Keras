@@ -6,14 +6,12 @@ This repository contains a comprehensive Drowsiness Detection System designed to
 ## Features
 - **Real-time Detection:** Utilizes a webcam to continuously monitor the driver's facial features.
 - **Eye State Analysis:** Analyzes the driver's eye state (open or closed) to determine drowsiness levels.
-- **Yawning Detection:** Identifies yawning patterns as an indicator of fatigue.
 - **Alert System:** Provides audio and visual alerts to warn drivers when drowsiness is detected.
 - **Customizable Sensitivity:** Allows customization of detection sensitivity to reduce false positives.
 - **Cross-Platform Compatibility:** Designed to run on multiple operating systems, including Windows, macOS, and Linux.
 
 ## Technologies Used
 - **OpenCV:** For image and video processing.
-- **Dlib:** For facial landmark detection.
 - **TensorFlow/Keras:** For implementing machine learning models.
 - **Python:** The core programming language for the system.
 
