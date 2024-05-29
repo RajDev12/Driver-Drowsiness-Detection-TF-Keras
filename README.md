@@ -1,30 +1,59 @@
-# Driver-Drowsiness-Detection
-Data set used for Haar Cascade model training is attached to : https://www.kaggle.com/datasets/serenaraju/yawn-eye-dataset-new/data
+# Drowsiness Detection System
 
-This code can detect your eyes and alert when the user is drowsy.
+## Overview
+This repository contains a comprehensive Drowsiness Detection System designed to improve road safety by monitoring drivers for signs of fatigue. Leveraging advanced computer vision and machine learning techniques, this system can accurately detect and alert drivers when they show signs of drowsiness.
 
-***Applications*** <br><br>
-This can be used by riders who tend to drive for a longer period of time that may lead to accidents.
-<br><br><br>
-***Code Requirements***
-The example code is in Python (version 2.7 or higher will work).
+## Features
+- **Real-time Detection:** Utilizes a webcam to continuously monitor the driver's facial features.
+- **Eye State Analysis:** Analyzes the driver's eye state (open or closed) to determine drowsiness levels.
+- **Yawning Detection:** Identifies yawning patterns as an indicator of fatigue.
+- **Alert System:** Provides audio and visual alerts to warn drivers when drowsiness is detected.
+- **Customizable Sensitivity:** Allows customization of detection sensitivity to reduce false positives.
+- **Cross-Platform Compatibility:** Designed to run on multiple operating systems, including Windows, macOS, and Linux.
 
-<h3>Libraries</h3>
-<br>
-<ul>
-  <li>import OpenCv</li>
-  <li>import Tensorflow</li>
-  <li>import pygame</li>
-  <li>import Keras</li>
-  <li>import numpy</li>
-  <li>import matplotlib</li>
-</ul>
-<br>
-<h2>Description</h2>
-<p>A computer vision system that can automatically detect driver drowsiness in a real-time video stream and then play an alarm if the driver appears to be drowsy.</p>
+## Technologies Used
+- **OpenCV:** For image and video processing.
+- **Dlib:** For facial landmark detection.
+- **TensorFlow/Keras:** For implementing machine learning models.
+- **Python:** The core programming language for the system.
 
-<h4>Algorithm</h4>
-<p>Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of the eye (as if you were looking at the person), and then working clockwise around the eye.</p>
+## Installation
+### Getting Started
+1. Clone the repository:
+    ```
+    git clone https://github.com/dsshivamsingh/drowsiness-detection.git
+    cd drowsiness-detection
+    ```
+2. Install the necessary dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+3. Create required folders:
+    ```
+    mkdir models data
+    ```
+4. Download and organize the dataset:
+    - Download the dataset from [Kaggle](https://www.kaggle.com/).
+    - Extract the contents and place the `train` and `test` folders into the `data` directory.
+    - Rename the `test` folder to `valid`:
+        ```
+        mv data/test data/valid
+        ```
+5. Train your model: Run the following script to train your model:
+    ```
+    python models.py
+    ```
+6. Run the main script to start the drowsiness detection system:
+    ```
+    python main.py
+    ```
+   Ensure your webcam is connected and properly configured. The system will begin monitoring and provide alerts as needed.
 
-<p>It checks 20 consecutive frames and if the Eye Aspect ratio is less than 0.25, Alert is generated.</p>
+## Usage
+Once the installation and setup are complete, you can use the system to detect drowsiness in real-time.
 
+## Contributing
+We welcome contributions from the community! If you have ideas for improvements or new features, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss your proposed modifications.
+
+## Acknowledgments
+We would like to thank the developers of OpenCV, Dlib, and TensorFlow for their powerful libraries, as well as the open-source community for their invaluable contributions.
