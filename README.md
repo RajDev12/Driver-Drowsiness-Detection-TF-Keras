@@ -53,5 +53,8 @@ Once the installation and setup are complete, you can use the system to detect d
 ## Contributing
 We welcome contributions from the community! If you have ideas for improvements or new features, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss your proposed modifications.
 
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
 ## Acknowledgments
 We would like to thank the developers of OpenCV, Dlib, and TensorFlow for their powerful libraries, as well as the open-source community for their invaluable contributions.
